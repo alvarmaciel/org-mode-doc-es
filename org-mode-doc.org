@@ -1,7 +1,7 @@
 #+TITLE: Org Mode - ¡Organizá Tu Vida En Texto Plano!
 #+LANGUAGE:  es
-#+AUTHOR: Bernt Hansen (IRC:Thumper_ on freenode)
-#+EMAIL: bernt@norang.ca
+#+AUTHOR: Alvar Maciel, Niv Sardí, Vladimir Di Fiore. En base al trabajo de Bernt Hansen (IRC:Thumper_ on freenode)
+#+EMAIL: alvarmaciel@gmail.com
 #+OPTIONS:   H:3 num:t   toc:2 \n:nil @:t ::t |:t ^:nil -:t f:t *:t <:nil
 #+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
 #+OPTIONS:   author:t creator:t timestamp:t email:t
@@ -39,3 +39,69 @@ setadeadas en sus valores predeterminados. Se  muestra explícitamente el seteo 
 importantes variables utilizadas en org-mode esto en mantiene el comportamiento de mi
 de flujo de trabajo estable en caso de que cambie el valor por defecto
 en el futuro.
+* Primeros Pasos
+
+Uso =org-mode= en la mayoría de mis buffers de emacs
+** Configuración de Org-Mode
+:PROPERTIES:
+:CUSTOM_ID: Configuración
+:END:
+
+La siguiente configuración en el .emacs habilita org-mode para casir todos los buffers.
+=org-mode= es el modo por default de los archivos  =.org=, =.org_archive=, and =.txt=
+
+#+begin_src emacs-lisp :tangle yes
+  ;;;
+  ;;; Org Mode
+  ;;;
+  (add-to-list 'load-path (expand-file-name "~/git/org-mode/lisp"))
+  (add-to-list 'auto-mode-alist '("\\.\\(org\\|org_archive\\|txt\\)$" . org-mode))
+  (require 'org-install)
+  ;;
+  ;; Enlaces de teclas standar
+  (global-set-key "\C-cl" 'org-store-link)
+  (global-set-key "\C-ca" 'org-agenda)
+  (global-set-key "\C-cb" 'org-iswitchb)
+#+end_src
+
+=orgstruct++-mode= está habilitado en los mensajes de los buffers de =Gnus= para
+ayudar en la creación de mensajes de mail estructurados.
+
+#+begin_src emacs-lisp :tangle yes
+  (add-hook 'message-mode-hook 'orgstruct++-mode 'append)
+  (add-hook 'message-mode-hook 'turn-on-auto-fill 'append)
+  (add-hook 'message-mode-hook 'bbdb-define-all-aliases 'append)
+  (add-hook 'message-mode-hook 'orgtbl-mode 'append)
+  (add-hook 'message-mode-hook 'turn-on-flyspell 'append)
+  (add-hook 'message-mode-hook '(lambda () (setq fill-column 72)) 'append)
+  (add-hook 'message-mode-hook '(lambda () (local-set-key (kbd "C-c M-o") 'org-mime-htmlize)) 'append)
+#+end_src
+
+=flyspell-mode= está habilitado para casi todo, ayuda en la creación de
+documentos sin errores ortográficos.
+
+#+begin_src emacs-lisp :tangle yes
+  ;; flyspell para chequear ortografía en TODOS lados
+  (add-hook 'org-mode-hook 'turn-on-flyspell 'append)
+  
+  ;; Disable C-c [ and C-c ] in org-mode
+  (add-hook 'org-mode-hook
+            (lambda ()
+              ;; Undefine C-c [ and C-c ] since this breaks my
+              ;; org-agenda files when directories are include It
+              ;; expands the files in the directories individually
+              (org-defkey org-mode-map "\C-c["    'undefined)
+              (org-defkey org-mode-map "\C-c]"    'undefined)) 'append)
+  
+  (add-hook 'org-mode-hook
+            (lambda ()
+              (local-set-key (kbd "C-c M-o") 'bh/mail-subtree)) 'append)
+  
+  (defun bh/mail-subtree ()
+    (interactive)
+    (org-mark-subtree)
+    (org-mime-subtree))
+  
+  ;; Enable abbrev-mode
+  (add-hook 'org-mode-hook (lambda () (abbrev-mode 1)))
+#+end_src
