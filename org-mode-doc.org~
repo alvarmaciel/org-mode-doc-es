@@ -1,0 +1,40 @@
+#+TITLE: Org Mode - ¡Organizá Tu Vida En Texto Plano!
+#+LANGUAGE:  es
+#+AUTHOR: Bernt Hansen (IRC:Thumper_ on freenode)
+#+EMAIL: bernt@norang.ca
+#+OPTIONS:   H:3 num:t   toc:2 \n:nil @:t ::t |:t ^:nil -:t f:t *:t <:nil
+#+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+OPTIONS:   author:t creator:t timestamp:t email:t
+#+DESCRIPTION: A description of how I currently use org-mode
+#+KEYWORDS:  org-mode Emacs organization GTD getting-things-done git
+#+SEQ_TODO: FIXME FIXED
+#+INFOJS_OPT: view:nil toc:t ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+
+Org-mode es una fabulosa herramienta de organización construida por Carsten Dominik
+que opera en archivos de texto plano. Org-mode es parte de Emacs.
+
+Este documento asume que usted ha tenido algún contacto con org-modetambién a los
+conceptos como la agenda, el modo de captura, etc no será completamente
+extraño para ti. Más información acerca de org-mode puede ser encontrado en el
+[[http://orgmode.org/index.html # sec-4.1] [Org-Modo Manual]] y el [[http://orgmode.org/worg/] [Huargo del sitio.]]
+
+He estado usando org-mode como mi gestor de información personal por
+años. Empecé solamente las con palabras clave default = TODO = y = = DONE
+. He añadido pequeños cambios en mi flujo de trabajo y con el tiempo
+a evolucionado hasta convertirse en lo que se describe en este documento.
+
+Todavía puedo cambiar mi flujo de trabajo y probar cosas nuevas con regularidad. En este
+documento se describen los flujos de trabajo maduro en mi actualconfiguración de org-mode. yo
+tiendo a documentar los cambios en mi flujo de trabajo 30 días después de la aplicación de
+ellos (suponiendo que todavía existen en ese momento) para que el nuevo
+flujo de trabajo tenga chance de madurar.
+
+Algunas de las configuraciones personalizadas de Emacs que se describen en este documento están
+setadeadas en sus valores predeterminados. Esta muestra explícitamente el seteo de
+importantesvariables utilizadas en org-modeen mi flujo de trabajo y mantiene el comportamiento de mi
+de flujo de trabajo estable en caso de que cambia el valor por defecto
+en el futuro.
