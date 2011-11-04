@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+<title>Org Mode - ¡Organizá Tu Vida En Texto Plano!</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="title" content="Org Mode - ¡Organizá Tu Vida En Texto Plano!"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2011-11-04 20:27:16 ART"/>
+<meta name="author" content="Alvar Maciel, Niv Sardí, Vladimir Di Fiore. En base al trabajo de Bernt Hansen (IRC:Thumper_ on freenode)"/>
+<meta name="description" content="A description of how I currently use org-mode"/>
+<meta name="keywords" content="org-mode Emacs organization GTD getting-things-done git"/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  {margin-left:auto; margin-right:0px;  text-align:right;}
+  .left   {margin-left:0px;  margin-right:auto; text-align:left;}
+  .center {margin-left:auto; margin-right:auto; text-align:center;}
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top;  }
+  th.right  { text-align:center;  }
+  th.left   { text-align:center;   }
+  th.center { text-align:center; }
+  td.right  { text-align:right;  }
+  td.left   { text-align:left;   }
+  td.center { text-align:center; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  div.inlinetask {
+    padding:10px;
+    border:2px solid gray;
+    margin:10px;
+    background: #ffffcc;
+  }
+  textarea { overflow-x: auto; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+
+</head>
+<body>
+
+<div id="preamble">
+
+</div>
+
+<div id="content">
+<h1 class="title">Org Mode - ¡Organizá Tu Vida En Texto Plano!</h1>
+
+<p>Org-mode es una fabulosa herramienta de organización construida por Carsten Dominik
+que opera en archivos de texto plano. Org-mode es parte de Emacs.
+</p>
+<p>
+Este documento asume que ya ha tenido algún contacto con org-mode también con los
+conceptos como: agenda, el modo de captura, etc. Estos no serán completamente
+extraños para ti. Más información acerca de org-mode puede ser encontrado en:
+<a href="http://orgmode.org/index.html#sec-4.1">Manual de org-mode</a> y <a href="http://orgmode.org/worg/">Worg Site</a>
+</p>
+
+<p>
+He estado usando org-mode como mi gestor de información personal por
+años. Empecé solamente las con palabras clave default <code>TODO</code> y <code>DONE</code>. 
+Fuí añadido pequeños cambios en mi flujo de trabajo y con el tiempo
+a evolucionado hasta convertirse en lo que se describe en este documento.
+</p>
+<p>
+Todavía cambio  mi flujo de trabajo y pruebo cosas nuevas con regularidad. En este
+documento se describen los flujos de trabajo maduros en mi actual configuración de org-mode. 
+Tiendo a documentar los cambios en mi flujo de trabajo cada 30 días después de la aplicación de
+ellos (suponiendo que todavía existen en ese momento) para que el nuevo
+flujo de trabajo tenga chance de madurar.
+</p>
+<p>
+Algunas de las configuraciones personalizadas de Emacs que se describen en este documento están
+setadeadas en sus valores predeterminados. Se  muestra explícitamente el seteo de
+importantes variables utilizadas en org-mode esto en mantiene el comportamiento de mi
+de flujo de trabajo estable en caso de que cambie el valor por defecto
+en el futuro.
+</p>
+<div id="table-of-contents">
+<h2>&Iacute;ndice</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 Primeros Pasos</a>
+<ul>
+<li><a href="#Configuraci-n">1.1 Configuración de Org-Mode</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Primeros Pasos</h2>
+<div class="outline-text-2" id="text-1">
+
+
+<p>
+Uso <code>org-mode</code> en la mayoría de mis buffers de emacs
+</p>
+</div>
+
+<div id="outline-container-Configuraci-n" class="outline-3">
+<h3 id="Configuraci-n"><a name="sec-1-1" id="sec-1-1"></a><span class="section-number-3">1.1</span> Configuración de Org-Mode</h3>
+<div class="outline-text-3" id="text-Configuraci-n">
+
+
+<p>
+La siguiente configuración en el .emacs habilita org-mode para casir todos los buffers.
+<code>org-mode</code> es el modo por default de los archivos  <code>.org</code>, <code>.org_archive</code>, and <code>.txt</code>
+</p>
+
+
+
+<pre class="src src-emacs-lisp"><span style="color: #add8e6;">;;;</span>
+<span style="color: #add8e6;">;;; </span><span style="color: #add8e6;">Org Mode</span>
+<span style="color: #add8e6;">;;;</span>
+(add-to-list 'load-path (expand-file-name <span style="color: #87cefa;">"~/git/org-mode/lisp"</span>))
+(add-to-list 'auto-mode-alist '(<span style="color: #87cefa;">"\\.</span><span style="color: #87cefa; font-weight: bold;">\\</span><span style="color: #87cefa; font-weight: bold;">(</span><span style="color: #87cefa;">org</span><span style="color: #87cefa; font-weight: bold;">\\</span><span style="color: #87cefa; font-weight: bold;">|</span><span style="color: #87cefa;">org_archive</span><span style="color: #87cefa; font-weight: bold;">\\</span><span style="color: #87cefa; font-weight: bold;">|</span><span style="color: #87cefa;">txt</span><span style="color: #87cefa; font-weight: bold;">\\</span><span style="color: #87cefa; font-weight: bold;">)</span><span style="color: #87cefa;">$"</span> . org-mode))
+(<span style="color: #afeeee; font-weight: bold;">require</span> '<span style="color: #98fb98;">org-install</span>)
+<span style="color: #add8e6;">;;</span>
+<span style="color: #add8e6;">;; </span><span style="color: #add8e6;">Enlaces de teclas standar</span>
+(global-set-key <span style="color: #87cefa;">"\C-cl"</span> 'org-store-link)
+(global-set-key <span style="color: #87cefa;">"\C-ca"</span> 'org-agenda)
+(global-set-key <span style="color: #87cefa;">"\C-cb"</span> 'org-iswitchb)
+</pre>
+
+
+<p>
+<code>orgstruct++-mode</code> está habilitado en los mensajes de los buffers de <code>Gnus</code> para
+ayudar en la creación de mensajes de mail estructurados.
+</p>
+
+
+
+<pre class="src src-emacs-lisp">(add-hook 'message-mode-hook 'orgstruct++-mode 'append)
+(add-hook 'message-mode-hook 'turn-on-auto-fill 'append)
+(add-hook 'message-mode-hook 'bbdb-define-all-aliases 'append)
+(add-hook 'message-mode-hook 'orgtbl-mode 'append)
+(add-hook 'message-mode-hook 'turn-on-flyspell 'append)
+(add-hook 'message-mode-hook '(<span style="color: #afeeee; font-weight: bold;">lambda</span> () (setq fill-column 72)) 'append)
+(add-hook 'message-mode-hook '(<span style="color: #afeeee; font-weight: bold;">lambda</span> () (local-set-key (kbd <span style="color: #87cefa;">"C-c M-o"</span>) 'org-mime-htmlize)) 'append)
+</pre>
+
+
+<p>
+<code>flyspell-mode</code> está habilitado para casi todo, ayuda en la creación de
+documentos sin errores ortográficos.
+</p>
+
+
+
+<pre class="src src-emacs-lisp"><span style="color: #add8e6;">;; </span><span style="color: #add8e6;">flyspell para chequear ortograf&#237;a en TODOS lados</span>
+(add-hook 'org-mode-hook 'turn-on-flyspell 'append)
+
+<span style="color: #add8e6;">;; </span><span style="color: #add8e6;">Disable C-c [ and C-c ] in org-mode</span>
+(add-hook 'org-mode-hook
+          (<span style="color: #afeeee; font-weight: bold;">lambda</span> ()
+            <span style="color: #add8e6;">;; </span><span style="color: #add8e6;">Undefine C-c [ and C-c ] since this breaks my</span>
+            <span style="color: #add8e6;">;; </span><span style="color: #add8e6;">org-agenda files when directories are include It</span>
+            <span style="color: #add8e6;">;; </span><span style="color: #add8e6;">expands the files in the directories individually</span>
+            (org-defkey org-mode-map <span style="color: #87cefa;">"\C-c["</span>    'undefined)
+            (org-defkey org-mode-map <span style="color: #87cefa;">"\C-c]"</span>    'undefined)) 'append)
+
+(add-hook 'org-mode-hook
+          (<span style="color: #afeeee; font-weight: bold;">lambda</span> ()
+            (local-set-key (kbd <span style="color: #87cefa;">"C-c M-o"</span>) 'bh/mail-subtree)) 'append)
+
+(<span style="color: #afeeee; font-weight: bold;">defun</span> <span style="color: #7fffd4; font-weight: bold;">bh/mail-subtree</span> ()
+  (interactive)
+  (org-mark-subtree)
+  (org-mime-subtree))
+
+<span style="color: #add8e6;">;; </span><span style="color: #add8e6;">Enable abbrev-mode</span>
+(add-hook 'org-mode-hook (<span style="color: #afeeee; font-weight: bold;">lambda</span> () (abbrev-mode 1)))
+</pre>
+
+</div>
+</div>
+</div>
+</div>
+
+<div id="postamble">
+<p class="date">Fecha: 2011-11-04 20:27:16 ART</p>
+<p class="author">Autor: Alvar Maciel, Niv Sardí, Vladimir Di Fiore. En base al trabajo de Bernt Hansen (IRC:Thumper_ on freenode)</p>
+<p class="email"><a href="mailto:alvarmaciel@gmail.com">alvarmaciel@gmail.com</a></p>
+<p class="creator">Org version 7.7 with Emacs version 23</p>
+<a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
+
+</div>
+</body>
+</html>

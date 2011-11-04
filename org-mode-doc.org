@@ -109,4 +109,20 @@ documentos sin errores ortográficos.
 
 Las tareas están separadas en agrupamientos lógicos o proyectos.
 Use archivos org separados para grupos de tareas grandes y
-subdirectorios para 
+subdirectorios para colecciones de archivos de múltiples
+proyectos que van de la mano.
+
+Acá hay un ejemplo de los archivos que uso.
+
+Los siguientes archivos org juntan tareas no relacionadas con el trabajo:
+
+| Archivo      | Descripción                                              |
+|--------------+----------------------------------------------------------|
+| todo.org     | Tareas personales y cosas a las que hacer un seguimiento |
+| gsoc2009.org | Cosas para el Google Summer of Code 2009                 |
+| farm.org     | Tareas relacionadas a al granja                          |
+| mark.org     | Tareas realcionadas con mi hijo Mark                     |
+| org.org      | Tareas realacionadas con Org-mode                        |
+| git.org      | Tareas relacionadas con Git                              |
+| bzflag.org   | Tareas relacionadas con BZFlag                           |
+
