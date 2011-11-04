@@ -105,3 +105,8 @@ documentos sin errores ortográficos.
   ;; Enable abbrev-mode
   (add-hook 'org-mode-hook (lambda () (abbrev-mode 1)))
 #+end_src
+** Organizando Tu Vida EN Archivos Org
+
+Las tareas están separadas en agrupamientos lógicos o proyectos.
+Use archivos org separados para grupos de tareas grandes y
+subdirectorios para 
