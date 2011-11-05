@@ -126,3 +126,4 @@ Los siguientes archivos org juntan tareas no relacionadas con el trabajo:
 | git.org      | Tareas relacionadas con Git                              |
 | bzflag.org   | Tareas relacionadas con BZFlag                           |
 
+g
