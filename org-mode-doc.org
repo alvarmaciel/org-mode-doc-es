@@ -126,4 +126,30 @@ Los siguientes archivos org juntan tareas no relacionadas con el trabajo:
 | git.org      | Tareas relacionadas con Git                              |
 | bzflag.org   | Tareas relacionadas con BZFlag                           |
 
-g
+El siguiente archivo org junta capturas de notas y tareas:
+
+| Archivo    | Descripción                 |
+|------------+-----------------------------|
+| refile.org | Cesto de capturas de tareas |
+
+Los siguientes archivos org contienen mis notas de trabajo (son 
+nombres de clientes ficticios)
+
+| Archivos    | Descripción                               |
+|-------------+-------------------------------------------|
+| norang.org  | Tareas y notas de Norang                  |
+| XYZ.org     | Tareas y notas de XYZ corp                |
+| ABC.org     | Tareas de ABC Ltd                         |
+| ABC-DEF.org | Tareas del cliente DEF corp de la ABC Ltd |
+| ABC-KKK.org | Tareas del cliente KKK Inc de la ABC Ltd  |
+| YYY.org     | Tareas de YYY                             |
+
+Org-mode es ideal para hacer frente a varios clientes o a proyectos
+de los clientes. Un archivo org se convierte en un conjunto de proyectos, notas,
+etc para un único cliente o proyecto de los cliente.
+
+La consultora ABC Ltd. tiene varios clientes con los que trabajo.
+La separación de las tareas para cada sub-cliente en archivos separados org
+ayuda a mantener las cosas agrupados de forma lógica y dado que los clientes van y vienen esto
+permite que archivos org completos puedan ser agregados o quitados de mi agenda para mantener
+sólo lo que es importante ver en la vista agenda.
