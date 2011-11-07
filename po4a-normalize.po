@@ -19,17 +19,17 @@ msgstr ""
 #: ../org-mode.org:1
 #, no-wrap
 msgid "Org Mode - Organize Your Life In Plain Text!"
-msgstr ""
+msgstr "Org-mode - Organiza Tu Vida En Texto Plano!"
 
 #: ../org-mode.org:2
 #, no-wrap
 msgid "en"
-msgstr ""
+msgstr "es"
 
 #: ../org-mode.org:8
 #, no-wrap
 msgid "A description of how I currently use org-mode"
-msgstr ""
+msgstr "Una descripción de cómo uso actualmente org-mode"
 
 #: ../org-mode.org:9
 #, no-wrap

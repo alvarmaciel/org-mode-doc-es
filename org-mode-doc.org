@@ -153,3 +153,46 @@ La separación de las tareas para cada sub-cliente en archivos separados org
 ayuda a mantener las cosas agrupados de forma lógica y dado que los clientes van y vienen esto
 permite que archivos org completos puedan ser agregados o quitados de mi agenda para mantener
 sólo lo que es importante ver en la vista agenda.
+
+Otros archivos org son usados solamente para publicaciones y no contribuyen a la agenda.
+Ver Exportaciones y publicaciones para más detalles
+** Configuración de la agenda
+
+Este es la configuración actual de =org-agenda-files= (archivos de la agenda)
+#+begin_src emacs-lisp :tangle yes
+  (setq org-agenda-files (quote ("~/git/org"
+                                 "~/git/org/client1"
+                                 "~/git/org/bzflag"
+                                 "~/git/client2")))
+#+end_src
+
+** Estructura de archivos org
+
+** Mapeo de teclado
+
+* Tareas y sus estados
+
+** Palabras claves de TODO
+
+** Selección rápida de TODO
+
+* Agregar nuevas tareas rápidamente con Org Capture
+
+** Templates de captura
+
+** Archivos separados para las capturas de las tareas
+
+** La captura de tareas en sobre todo... ser rápido
+
+* Reclasificación de tareas
+
+** Configuración de la reclasificación
+
+** Reclasificando tareas
+
+** Reclasificando notas
+
+** Reclasificando llamadas
+
+* Vistas de agenda personalizada
+
