@@ -1,0 +1,1018 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-09-10 13:47-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:2
+#, no-wrap
+msgid "en"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:3
+#, no-wrap
+msgid ""
+"Experienced and passionate Computer Scientist and Free Software Developer "
+"looking for new challenges."
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:6
+#, no-wrap
+msgid "Email:"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:6
+#, no-wrap
+msgid "xaiki@evilgiggle.com"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:6
+#, no-wrap
+msgid "Age:"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:6
+#, no-wrap
+msgid "age 26."
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:7
+#, no-wrap
+msgid "Phone:"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:7
+#, no-wrap
+msgid "Nationality:"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:7
+#, no-wrap
+msgid ":French:Argentinian:"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:9
+#, no-wrap
+msgid "Education"
+msgstr ""
+
+#, no-wrap
+msgid "2006-2007 Maths and Computer Science Masters"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:10 /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:15 /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:19 /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:23 /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:51 /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:88 /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:161 /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:168
+#, no-wrap
+msgid ":Paris:FR:"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:11
+#, no-wrap
+msgid "Université Denis Diderot: Maitrise de Mathematiques et d'Informatique"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:12
+#, no-wrap
+msgid "+ Project: MiniOCaML interpreter (2 members team - CaML)"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:13
+#, no-wrap
+msgid ""
+"+ Research : Big Social Networks Topology (Graph analysis of Fickr - Perl & "
+"C)"
+msgstr ""
+
+#, no-wrap
+msgid "2005-2004 Maths and Computer Science Bachelor"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:16
+#, no-wrap
+msgid "Université Denis Diderot: Licence de Mathematiques et d'informatique"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:17
+#, no-wrap
+msgid "+ Project: Suffix Arrays, Algorithms, Analysis and Implementation (C)"
+msgstr ""
+
+#, no-wrap
+msgid "2003-2004 1rst year of Engineering"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:20
+#, no-wrap
+msgid "ESME Sudria: 1re année d'Ingenieurie"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:21
+#, no-wrap
+msgid ""
+"+ Project: Digital Luxmeter (3 members team - PIC      Assembly, "
+"Electronics)"
+msgstr ""
+
+#, no-wrap
+msgid "2001-2003 Preparatory School"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:24
+#, no-wrap
+msgid "ESME Sudria: Classes Préparatoires"
+msgstr ""
+
+#, no-wrap
+msgid "1998-2001 Scientific Baccalaureate (A-Level)"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:26
+#, no-wrap
+msgid ":Aubagne:FR:"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:27
+#, no-wrap
+msgid "Lycée Joliot Curie: Baccalaureat Scientifique"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:29
+#, no-wrap
+msgid "Skills"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:30
+#, no-wrap
+msgid "Systems"
+msgstr ""
+
+#, no-wrap
+msgid "UNIX (GNU/Linux, BSD, ...) including Embedded and Real Time:"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:31 /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:37
+#, no-wrap
+msgid ":advanced:"
+msgstr ""
+
+#, no-wrap
+msgid "Windows and Open VMS:"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:32 /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:38
+#, no-wrap
+msgid ":basic:"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:33
+#, no-wrap
+msgid "Networks"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:34
+#, no-wrap
+msgid "Ethernet, 802.11, TCP/IP, IPv4/IPv6, Firewalling, POTS, VoIP (SIP/H323)"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:35
+#, no-wrap
+msgid "Servers  Web, Mail, FTP, DNS, DHCP, LDAP, PBX, (My/PostGre)SQL"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:36 /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:43
+#, no-wrap
+msgid "Languages"
+msgstr ""
+
+#, no-wrap
+msgid "C, Fortran, (E)Lisp, Perl, Unix sh"
+msgstr ""
+
+#, no-wrap
+msgid "C++, Java, Assembly, Python, CaML"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:39
+#, no-wrap
+msgid ""
+"Know Imperative, Object and Functional languages, so can learn any new "
+"language fast"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:40
+#, no-wrap
+msgid "Web"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:41
+#, no-wrap
+msgid "(X)HTML, CSS, PHP, (Perl) CGI."
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:42
+#, no-wrap
+msgid ")"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:44
+#, no-wrap
+msgid "Spanish: mother tongue,"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:45
+#, no-wrap
+msgid "French: Fluent (15+ years living in France ),"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:46
+#, no-wrap
+msgid "English: Fluent (2years living in Australia ),"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:47
+#, no-wrap
+msgid "German, Japanese: basic."
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:48
+#, no-wrap
+msgid ""
+"During my travels I picked up bits of Cantonese, Mandarin, Malay, Thai and "
+"Lao"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:50
+#, no-wrap
+msgid "Latest Work Experience"
+msgstr ""
+
+#, no-wrap
+msgid "2009-2011 R&D Software Engineer: CROLL→TDF|Smartjog"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:52
+#, no-wrap
+msgid "Audio, Video, Streaming & Broadcast*"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:54
+#, no-wrap
+msgid ""
+"As a consultant for CROLL I was integrated inside the 'Core' team, of the "
+"SmartJog TDF"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:55
+#, no-wrap
+msgid "division to work essentially on:"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:56
+#, no-wrap
+msgid "«In House» =FFMPEG= Maintainer."
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:57
+#, no-wrap
+msgid "+ Patch for Broadcasters specific features."
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:58
+#, no-wrap
+msgid "+ Reverse Engineering of media Formats (MXF, XDCAM,. . . )"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:59
+#, no-wrap
+msgid "+ QA, tests, stability."
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:60
+#, no-wrap
+msgid "+ Back/Forward-Porting between FFMPEG, FFMBC and HEAD."
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:61
+#, no-wrap
+msgid "«In House» =Icecast= Maintainer."
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:62
+#, no-wrap
+msgid "+ Patch to add new streaming formats (FLV)."
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:63
+#, no-wrap
+msgid "+ Code Auditing for Performance and Scalability."
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:64
+#, no-wrap
+msgid "+ Massive code cleanup (30+ patches sent to icecast-devel)."
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:66
+#, no-wrap
+msgid "On the side, I got involved in a par of other projects:"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:67
+#, no-wrap
+msgid "Porting/Fixing DVB drivers (C Kernel Linux)."
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:68
+#, no-wrap
+msgid ""
+"Designing and Developing a test framework for the internal "
+"Transcoding/Wrapping tool (Python, C)."
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:69
+#, no-wrap
+msgid ""
+"Optimize internal development processes (SCM, Release Management, Workflow "
+"and tools)."
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:71
+#, no-wrap
+msgid "Work Experience"
+msgstr ""
+
+#, no-wrap
+msgid "2007-2009 R&D Software Engineer: Silicon Graphics INC"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:72 /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:152
+#, no-wrap
+msgid ":Melbourne:AU:"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:73
+#, no-wrap
+msgid "Linux Kernel Filesystem*"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:75
+#, no-wrap
+msgid ""
+"I joined the SGI File-Systems R&D group in Melbourne to work mainly on the "
+"XFS"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:76
+#, no-wrap
+msgid "File-System."
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:77
+#, no-wrap
+msgid "=DMAPI= (Data Storage Management API) maintainer."
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:78
+#, no-wrap
+msgid "Parent Pointers feature for XFS."
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:79
+#, no-wrap
+msgid "Wrote a File-System torture suite (C)."
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:80
+#, no-wrap
+msgid "Migration of the source control from a closed source internal tool to Git."
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:81
+#, no-wrap
+msgid ""
+"+ Wrote a set of scripts to migrate the old content to Git and keep the old "
+"SCM"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:82
+#, no-wrap
+msgid "+ up-to-date when working in Git (Perl)."
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:83
+#, no-wrap
+msgid "+ Wrote documentation, gave presentations to the group and orchestrated the"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:84
+#, no-wrap
+msgid "+ Git transition."
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:85
+#, no-wrap
+msgid "Maintained large patchsets between dierent versions of the Linux Kernel."
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:86
+#, no-wrap
+msgid "Linux Community interaction, via Mailing-Lists and Real-Life events."
+msgstr ""
+
+#, no-wrap
+msgid "2007 Embedded & Real-Time Linux Engineer: OpenWide|OS4I"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:89
+#, no-wrap
+msgid "Embedded Userland, Kernel Drivers & RT-Linux*"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:91
+#, no-wrap
+msgid ""
+"Open Wide is the leading open source specialist in France. Open Wide OS4I "
+"provides"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:92
+#, no-wrap
+msgid ""
+"consulting, engineering, support and training services to a wide portfolio "
+"of clients from"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:93
+#, no-wrap
+msgid "specialized medium companies up to the Fortune Forty."
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:94
+#, no-wrap
+msgid "My diversified missions brought me to:"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:95
+#, no-wrap
+msgid "Conceive, develop and deploy Embedded Systems build process and software"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:96
+#, no-wrap
+msgid "architecture (C, Python, Perl, Make, Shell)."
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:97
+#, no-wrap
+msgid "Linux Kernel Hacking:"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:98
+#, no-wrap
+msgid "+ Kernel Device drivers (mainly Flash Devices/MTD)."
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:99
+#, no-wrap
+msgid "+ Fix bugs in code written by others (on Real-Time & Embedded Systems)."
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:100
+#, no-wrap
+msgid "+ Port code between different versions of the Linux kernel."
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:101
+#, no-wrap
+msgid "+ Study of the LTT and PREEMPT_RT Patches-sets"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:102
+#, no-wrap
+msgid "Develop QA tools for Embedded Systems build process (Perl, Python)."
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:103
+#, no-wrap
+msgid "Debug and Optimize code for size and performance (C)."
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:104
+#, no-wrap
+msgid "Re-implement core components of the embedded system (Low Level C)."
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:105
+#, no-wrap
+msgid "Write Documentation, and make commercial presentations."
+msgstr ""
+
+#, no-wrap
+msgid "2006 VoIP/Telephony Consultant: Assekuransa"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:107 /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:116
+#, no-wrap
+msgid ":BuenosAires:AR:"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:108
+#, no-wrap
+msgid "VoIP Interconnection*"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:110
+#, no-wrap
+msgid "I realized various missions in the IT departement of Assekuransa:"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:111
+#, no-wrap
+msgid "Advice and design of Postfix transports (Perl)."
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:112
+#, no-wrap
+msgid ""
+"Design and Deploy a VoIP solution between their Mexican and Argentinian "
+"office (Asterisk, SIP Phones)."
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:113
+#, no-wrap
+msgid "Develop a Monitoring and Reporting tool for their local Hardware"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:114
+#, no-wrap
+msgid "PBX (Perl, DBI/SQL)."
+msgstr ""
+
+#, no-wrap
+msgid "2006 Free Software Consultant: SoLAr→CheLA"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:117
+#, no-wrap
+msgid "Education, Social Work & Sysadmin*"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:119
+#, no-wrap
+msgid ""
+"SoLAr (Software Libre Argentina), is an NGO helping the adoption of Free "
+"Software in"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:120
+#, no-wrap
+msgid "Argentina, They helped me get through 2 missions:"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:121
+#, no-wrap
+msgid ""
+"=CheLA= is an NGO in Buenos Aires, experimenting with arts and technology, "
+"and"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:122
+#, no-wrap
+msgid ""
+"using both to unite Parque Patricios inhabitants. I was sent there by SoLAr "
+"to help"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:123
+#, no-wrap
+msgid ""
+"them with their IT issues, migrate their systems to GNU/Linux and Develop "
+"tools"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:124
+#, no-wrap
+msgid "that their artistic experiments required (C, Perl, Python)."
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:125
+#, no-wrap
+msgid ""
+"=Casa Vela= is an NGO dependent of the Alfonos Farias institution that helps "
+"AIDS"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:126
+#, no-wrap
+msgid ""
+"infected/affected kids providing educational assistance, and giving them "
+"access to"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:127
+#, no-wrap
+msgid "various workshops."
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:128
+#, no-wrap
+msgid "I gave a Computer Science & IT workshop to 6-16 year olds."
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:129
+#, no-wrap
+msgid "I also was in charge of Installing and Administrating the Computer Lab. The"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:130
+#, no-wrap
+msgid ""
+"network design had to cope with the scarce resources and unpredictable "
+"network"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:131
+#, no-wrap
+msgid "topology/stability."
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:132
+#, no-wrap
+msgid "I developed a set of tools based on Avahi to auto-configure and"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:133
+#, no-wrap
+msgid "start using services while they appeared on the network (C,"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:134
+#, no-wrap
+msgid "Python)."
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:136
+#, no-wrap
+msgid "Hobbies"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:137
+#, no-wrap
+msgid "FLOSS"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:138
+#, no-wrap
+msgid "Involved in Free Software Projects, Debian Developer."
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:139
+#, no-wrap
+msgid "Created a Free Software club at the ESME Sudria as a section of CapInfo."
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:140
+#, no-wrap
+msgid "Volunteer"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:141
+#, no-wrap
+msgid "Volunteer for Solidarité Sida (AIDS fund-raising) and HospitalityClub.org."
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:142
+#, no-wrap
+msgid "Formerly active in: QuaiWeb (2005-IT instructor), AFEV (2005-Math Teacher)."
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:143
+#, no-wrap
+msgid "Travels"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:144
+#, no-wrap
+msgid "Backpacked 28 countries in Europe, Americas and Asia"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:145
+#, no-wrap
+msgid ""
+"Active Member of HospitalityClub, CouchSurfing and BeWelcome Travellers "
+"associations."
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:146
+#, no-wrap
+msgid "Arts/Other"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:147
+#, no-wrap
+msgid ""
+"Guitar Player for more than 10 years, Photography, Structural study of human "
+"languages."
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:148
+#, no-wrap
+msgid ""
+"Used to run a small set of Linux servers for personal purposes "
+"(Mail/Web/...)"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:150
+#, no-wrap
+msgid "Conferences"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:151
+#, no-wrap
+msgid "Speaker"
+msgstr ""
+
+#, no-wrap
+msgid "Jan 2008 Linux.Conf.Au (MiniConf)"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:153
+#, no-wrap
+msgid "Why don't the Big Guys Like Debian, Debian in Big Corporations*"
+msgstr ""
+
+#, no-wrap
+msgid "Sep 2006 CriSol"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:154
+#, no-wrap
+msgid ":LaPlata:AR:"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:155
+#, no-wrap
+msgid "Report on Education with Free Software, the CasaVela case*"
+msgstr ""
+
+#, no-wrap
+msgid "May 2005 Encuentro Mayo '05"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:156
+#, no-wrap
+msgid ":SantiagoDeChile:CL:"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:157
+#, no-wrap
+msgid "Debian, A Social Success*"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:158
+#, no-wrap
+msgid "Booth & Helper"
+msgstr ""
+
+#, no-wrap
+msgid "Aug 2008 DebConf 8"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:159
+#, no-wrap
+msgid ":MarDelPlata:AR:"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:160
+#, no-wrap
+msgid "Helped the local team."
+msgstr ""
+
+#, no-wrap
+msgid "2001-2006 Solutions GNU/Linux"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:162
+#, no-wrap
+msgid "Debian Project Booth."
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:163
+#, no-wrap
+msgid "Attendee"
+msgstr ""
+
+#, no-wrap
+msgid "2004-2007 FOSDEM"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:164
+#, no-wrap
+msgid ":Bruxelles:BE:"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:165
+#, no-wrap
+msgid "Free and OpenSource Software Developers European Meeting."
+msgstr ""
+
+#, no-wrap
+msgid "2005 LGM0"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:166
+#, no-wrap
+msgid ":Lyon:FR:"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:167
+#, no-wrap
+msgid "Libre Graphics Meeting."
+msgstr ""
+
+#, no-wrap
+msgid "2006-2007 Math Club Sessions"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:170
+#, no-wrap
+msgid "Projects"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:171
+#, no-wrap
+msgid "Icecast"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:172
+#, no-wrap
+msgid "https://github.com/xaiki/IceCast"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:173
+#, no-wrap
+msgid "Debian"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:174
+#, no-wrap
+msgid "http://qa.debian.org/developer.php?login=xaiki@debian.org"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:176
+#, no-wrap
+msgid "References"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:177
+#, no-wrap
+msgid "Tom Bouillut: CROLL: Manager: Direct Comercial Authority"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:178
+#, no-wrap
+msgid "E-Mail: tom@croll.fr"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:179
+#, no-wrap
+msgid "Phone : +336 1928 5908"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:180
+#, no-wrap
+msgid "Mark Goodwin: SGI: Manager: Direct Technical Authority"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:181
+#, no-wrap
+msgid "E-Mail: goodwinos@gmail.com"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:182
+#, no-wrap
+msgid "Phone : +61-4-18969583"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:183
+#, no-wrap
+msgid "Lachlan Mc Ilroy: SGI: Tech Lead: Direct Technical Authority"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:184
+#, no-wrap
+msgid "E-Mail: lachlanmcilroy@hotmail.com"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:185
+#, no-wrap
+msgid "Greg Banks: SGI: Principal Engineer"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:186
+#, no-wrap
+msgid "E-Mail: gnb@fmeh.org"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:187
+#, no-wrap
+msgid "Phone : +44 788 791 1463"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:188
+#, no-wrap
+msgid "Pierre Ficheux: OpenWide|OS4i: CTO: Direct Technical Authority"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:189
+#, no-wrap
+msgid "E-Mail: pierre.ficheux@openwide.fr"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:190
+#, no-wrap
+msgid "Phone : +33 6 806 362 45"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:191
+#, no-wrap
+msgid "Olivier Viné: OpenWide|OS4i: COO: Direct Operations Authority"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:192
+#, no-wrap
+msgid "E-Mail: olivier.vine@openwide.fr"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:193
+#, no-wrap
+msgid "Phone : +33 6 898 865 37"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:194
+#, no-wrap
+msgid "Hugues Hiegel: OpenWide|OS4i: Engineer: Co-Worker"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:195
+#, no-wrap
+msgid "E-Mail: hugues.hiegel@openwide.fr"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:196
+#, no-wrap
+msgid "Sebastian Galletto: Assekuransa: CTO: Direct Technical Authority"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:197
+#, no-wrap
+msgid "E-Mail: sgalletto@assekuransa.com"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:198
+#, no-wrap
+msgid "Phone : +54 11 5254 5262"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:199
+#, no-wrap
+msgid "Vladimir Di Fiore: SoLAr: Board Member"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:200
+#, no-wrap
+msgid "E-Mail: vdifiore@solar.org.ar"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:201
+#, no-wrap
+msgid "Phone : +54 15 6299 2437"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:202
+#, no-wrap
+msgid ""
+"Anne Micheli: Universite Paris 7 Denis Diderot: Professor: Teacher, Project "
+"Mentor"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:203
+#, no-wrap
+msgid "E-Mail: amicheli@liafa.jussieu.fr"
+msgstr ""
+
+#: /home/xaiki/src/latex/cv-git/cv-niv-sardi-en.org:204
+#, no-wrap
+msgid "Phone : +33 1 44 27 86 64"
+msgstr ""
