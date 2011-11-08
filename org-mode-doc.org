@@ -105,7 +105,7 @@ documentos sin errores ortográficos.
   ;; Enable abbrev-mode
   (add-hook 'org-mode-hook (lambda () (abbrev-mode 1)))
 #+end_src
-** Organizando Tu Vida EN Archivos Org
+** Organizando Tu Vida En Archivos Org
 
 Las tareas están separadas en agrupamientos lógicos o proyectos.
 Use archivos org separados para grupos de tareas grandes y
@@ -165,6 +165,8 @@ Este es la configuración actual de =org-agenda-files= (archivos de la agenda)
                                  "~/git/org/bzflag"
                                  "~/git/client2")))
 #+end_src
+=org-mode= maneja las variables de =org-agenda-files= automáticamente usando
+=C-c [= y =C-c ]= para agregar y remover archivos respectivamente. Sin embargo,
 
 ** Estructura de archivos org
 
