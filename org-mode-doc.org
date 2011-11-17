@@ -167,9 +167,83 @@ Este es la configuración actual de =org-agenda-files= (archivos de la agenda)
 #+end_src
 =org-mode= maneja las variables de =org-agenda-files= automáticamente usando
 =C-c [= y =C-c ]= para agregar y remover archivos respectivamente. Sin embargo,
+Sin embargo, esto sustituye  mi lista de directorio con una 
+lista de nombres de archivo explícitos y no es lo que quiero. 
+Si esto ocurre entonces cuando agregue un nuevo archivo org 
+a cualquiera de los directorios de arriba no se agregarán a  mi agenda
+y probablemente se perderé algo importante.
+
+Tengo deshabilitadas las teclas =C-c [= y = C-c] en =org-mode-hook= para
+prevenir mezclar mi lista de directorios en la variable =org-agenda-files=.
+Solamente tengo que agregar o remover directorios manualmente en mi archivo
+ =.emacs=. Cambiar la lista de directorios en =org-agenda-files= ocurre raras 
+veces ya que los nuevos archivos en los directorios existentes son tomados
+automáticamente.
+
+En el ejemplo anterior tenemos =~/git/client2= en un repositorio git separado
+de =~/git/org=. Esto nos da la flexibilidad de dejar información confidencial 
+en el sitio del cliente y tener toda mi información personal disponible en cualquier
+lugar en que use Org-Mode. Yo sincronizo mi repositorio personal en multiples
+maquinas y evito sincronizar la información confidencial en la laptop personal
+con la que viajo. =org-agenda-files= en esta laptop no incluye el directorio 
+=/git/clent2=
 
 ** Estructura de archivos org
+:PROPERTIES:
+:CUSTOM_ID: OrgFileStructure
+:END:
 
+La mayoría de mis archivos org están configurados solo  con encabezados de 
+nivel 1 como categorías . Tareas y proyectos empiezan en un nivel 2
+
+Estos son ejemplos de mis encabezados de nivel 1 en
+
+=todo.org=
+
+- Fechas Especiales
+
+  Incluye encabezados de nivel 2 para:
+  
+  - Cumpleaños
+  - Aniversarios
+  - Feriados
+
+- Finanzas
+- Salud y recreación
+- Mantenimiento de la casa
+- Mantenimiento del jardín
+- Notas
+- Tareas
+- Mantenimiento del auto
+- Claves
+
+
+=norang.org=:
+
+- Mantenimiento de sitemas
+- Sueldos
+- Contabilidad
+- Finanzas
+- Mantenimiento de Hardware
+- Tareas
+- Investigación y Desarrollo
+- Notas
+- Seguimientos de pedidos de compra
+- claves
+
+Cada uno de estas tareas de nivel 1tiene un =bloque de propiedad=
+especificando la categoría para cada tarea en ese árbol. Los encabezados
+de nivel 1 están configurados así:
+
+: * Salud y Recreación
+:   :PROPERTIES:
+:   :CATEGORY: Salud
+:   :END:
+:   ...
+: * Mantenimiento de la casa
+:   :PROPERTIES:
+:   :CATEGORY: Casa
+:   :END:
 ** Mapeo de teclado
 
 * Tareas y sus estados
