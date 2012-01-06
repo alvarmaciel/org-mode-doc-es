@@ -5,7 +5,7 @@
 #+OPTIONS:   H:3 num:t   toc:2 \n:nil @:t ::t |:t ^:nil -:t f:t *:t <:nil
 #+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
 #+OPTIONS:   author:t creator:t timestamp:t email:t
-#+DESCRIPTION: A description of how I currently use org-mode
+#+DESCRIPTION: Una descripción acerca de como uso org-mode
 #+KEYWORDS:  org-mode Emacs organization GTD getting-things-done git
 #+SEQ_TODO: FIXME FIXED
 #+INFOJS_OPT: view:nil toc:t ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
@@ -245,16 +245,399 @@ de nivel 1 están configurados así:
 :   :CATEGORY: Casa
 :   :END:
 ** Mapeo de teclado
+:PROPERTIES:
+:CUSTOM_ID: MapeoTeclado
+:END:
 
-* Tareas y sus estados
+Yo vivo en la agenda. Para meterme rápidamente en la agenda mapeé
+=F12= a la secuencia =C-c a= Ya que lo uso miles de veces en un
+día.
 
-** Palabras claves de TODO
+Tengo el siguiente mapeo de teclado configurado en mi emacs (ordenados por frecuencia)
 
+| Tecla   | Para                                                                 | Uso           |
+|---------+----------------------------------------------------------------------+---------------|
+| F12     | Agenda (1 Tecla es menos que  C-c a)                                 | Muy Seguido   |
+| C-c b   | Cambia de archivos org                                               | Muy Seguido   |
+| F11     | Ir al siguiente item registrado                                      | Muy Seguido   |
+| C-M-r   | Capturar tarea                                                       | Muy Seguido   |
+| C-F11   | fijar hora a una tarea (mostrar menú con prefijos)                   | Seguido       |
+| f9 g    | Gnus - Chequeo mail regularmente                                     | Seguido       |
+| f5      | Mostrar Items TODO para este árbol                                   | Seguido       |
+| S-f5    | Ensanchar                                                            | Seguido       |
+| f9 b    | Acceso rápido a datos bbdb                                           | Seguido       |
+| f9 c    | Acceso a Calendario                                                  | Seguido       |
+| C-S-f12 | Guardar buffers y publicar el proyecto actual                        | Seguido       |
+| C-c l   | Guardar un link para recuperar C-c C-l                               | Seguido       |
+| f8      | Ir al siguiente archivo org en org-agenda-files                      | Algunas Veces |
+| f9 r    | Poner en caja de cita la región seleccionadaBoxquote selected region | Algunas Veces |
+| f9 t    | Insertar timestamp inactivo                                          | Algunas Veces |
+| f9 v    | Cambiar a modo visible (para mostrar/editar links)                   | Algunas Veces |
+| C-f9    | Buffer Previo                                                        | Algunas Veces |
+| C-f10   | Buffer Siguiente                                                     | Algunas Veces |
+| C-x n r | Estrechar a región                                                   | Algunas Veces |
+| f9 f    | Poner en caja insertar una fila                                      | Algunas Veces |
+| f9 i    | Manual Informativo                                                   | Algunas Veces |
+| f9 I    | Golpe de reloj de entrada                                            | Algunas Veces |
+| f9 O    | Golpe de reloj de salida                                             | Algunas Veces |
+| f9 o    | Cambiar a buffer de pruebas org                                      | Algunas Veces |
+| f9 s    | Cambiar a buffer de prueba                                           | Algunas Veces |
+| C-c r   | Capturar una tarea (desde mi celular)                                | Raras Veces   |
+| f9 h    | Esconder otras tareas                                                | Raras Veces   |
+| f7      | Cambiar a ajuste de línea                                            | Raras Veces   |
+| f9 u    | Destabular región                                                    | Raras Veces   |
+| C-c a   | Entrar a la agenda (testeo mínimo de emacs)                          | Raras Veces   |
+
+Esta es la configuración del mapeo de teclado en lisp:
+#+begin_src emacs-lisp :tangle yes
+  ;; Mapeo personal del teclado
+  (global-set-key (kbd "<f12>") 'org-agenda)
+  (global-set-key (kbd "<f5>") 'bh/org-todo)
+  (global-set-key (kbd "<S-f5>") 'bh/widen)
+  (global-set-key (kbd "<f7>") 'bh/set-truncate-lines)
+  (global-set-key (kbd "<f8>") 'org-cycle-agenda-files)
+  (global-set-key (kbd "<f9> b") 'bbdb)
+  (global-set-key (kbd "<f9> c") 'calendar)
+  (global-set-key (kbd "<f9> f") 'boxquote-insert-file)
+  (global-set-key (kbd "<f9> g") 'gnus)
+  (global-set-key (kbd "<f9> h") 'bh/hide-other)
+  (global-set-key (kbd "<f9> i") 'info)
+
+  (global-set-key (kbd "<f9> I") 'bh/punch-in)
+  (global-set-key (kbd "<f9> O") 'bh/punch-out)
+
+  (global-set-key (kbd "<f9> o") 'bh/make-org-scratch)
+
+  (global-set-key (kbd "<f9> r") 'boxquote-region)
+  (global-set-key (kbd "<f9> s") 'bh/switch-to-scratch)
+
+  (global-set-key (kbd "<f9> t") 'bh/insert-inactive-timestamp)
+  (global-set-key (kbd "<f9> u") 'bh/untabify)
+
+  (global-set-key (kbd "<f9> v") 'visible-mode)
+  (global-set-key (kbd "<f9> SPC") 'bh/clock-in-last-task)
+  (global-set-key (kbd "C-<f9>") 'previous-buffer)
+  (global-set-key (kbd "C-x n r") 'narrow-to-region)
+  (global-set-key (kbd "C-<f10>") 'next-buffer)
+  (global-set-key (kbd "<f11>") 'org-clock-goto)
+  (global-set-key (kbd "C-<f11>") 'org-clock-in)
+  (global-set-key (kbd "C-s-<f12>") 'bh/save-then-publish)
+  (global-set-key (kbd "C-M-r") 'org-capture)
+  (global-set-key (kbd "C-c r") 'org-capture)
+
+  (defun bh/hide-other ()
+    (interactive)
+    (save-excursion
+      (org-back-to-heading)
+      (org-shifttab)
+      (org-reveal)
+      (org-cycle)))
+
+  (defun bh/set-truncate-lines ()
+    "Cambiar el valor de las líneas truncadas y refrescar la ventana."
+    (interactive)
+    (setq truncate-lines (not truncate-lines))
+    ;; Ahora refresca ventana (an idiom from simple.el):
+    (save-excursion
+      (set-window-start (selected-window)
+                        (window-start (selected-window)))))
+
+  (defun bh/make-org-scratch ()
+    (interactive)
+    (find-file "/tmp/publish/scratch.org")
+    (gnus-make-directory "/tmp/publish"))
+
+  (defun bh/switch-to-scratch ()
+    (interactive)
+    (switch-to-buffer "*scratch*"))
+
+  (defun bh/untabify ()
+    (interactive)
+    (untabify (point-min) (point-max)))
+#+end_src
+
+La razón principal por la que tengo un mapeo especial de teclas (como =F11=, y =F12== es
+para que esa teclas funcionen en cualquier modo. Si estoy en el índice del buffer de Gnus
+entonces =C-u C-c C-x C-i= no funciona, pero la combinación  =C-F11= si y esta salva mi horario
+sin que tenga que ir al buffer org-mode primero sólo para registrarme en una tarea reciente.
+
+* Las Tareas y sus estados
+
+Uso un conjunto de palabras claves tipos TODO para todos mis documentos org. Org-mode permite
+definir claves TODO por archivo pero encuentro más fácil tener un set estándar y global de
+claves TODO de manera que pueda usar la misma configuración en cualquiera de los archivos
+org en los que esté trabajando.
+
+La única excepción es este documento :) ya que no quiero que =org-mode= esconda la palabra
+=TODO= cuando aparezca en un encabezado. Configuré una variable =#+SEQ_TODO: FIXME FIXED= 
+al principio de este archivo para dejar que las claves =TODO= aparezcan sin modificar.
+
+** Palabras claves  TODO
+
+Uso un tema de color claro en emacs. Me es más fácil para leer en días con mucho sol.
+
+Estos son mis estados =TODO= y la configuración de color de los mismos:
+
+#+begin_src emacs-lisp :tangle yes
+  (setq org-todo-keywords
+        (quote ((sequence "TODO(t)" "SIGUIENTE(s)" "INICIADO(i)" "|" "FINALIZADO(f!/!)")
+                (sequence "DETENIDO(d@/!)" "ESPERANDO(e!)" "|" "CANCELADO(c@/!)" "PHONE")
+                (sequence "ABIERTO(A!)" "|" "CERRADO(C!)"))))
+  
+  (setq org-todo-keyword-faces
+        (quote (("TODO" :foreground "red" :weight bold)
+                ("SIGUIENTE" :foreground "blue" :weight bold)
+                ("INICIADO" :foreground "blue" :weight bold)
+                ("FINALIZADO" :foreground "forest green" :weight bold)
+                ("ESPERANDO" :foreground "orange" :weight bold)
+                ("DETENIDO" :foreground "magenta" :weight bold)
+                ("CANCELADO" :foreground "forest green" :weight bold)
+                ("ABIERTO" :foreground "blue" :weight bold)
+                ("CERRADO" :foreground "forest green" :weight bold)
+                ("PHONE" :foreground "forest green" :weight bold))))
+#+end_src
+*** Estados normales de las tareas
+
+Las tareas normalmente van en esta secuencia =TODO= -> =DONE=-
+
+El siguiente diagrama muestra los posibles estados y transiciones para una tarea
+
+#+begin_src plantuml :file normal_task_states.png
+  title Normal Task States
+  [*] -> TODO
+  TODO -> INICIADO
+  TODO -> FINALIZADO
+  INICIADO -> FINALIZADO
+  FINALIZADO -> [*]
+  TODO --> ESPERANDO
+  ESPERANDO --> TODO
+  INICIADO --> ESPERANDO
+  ESPERANDO --> INICIADO
+  DETENIDO --> CANCELADO
+  ESPERANDO --> CANCELADO
+  CANCELADO --> [*]
+  TODO --> DETENIDO
+  DETENIDO --> TODO
+  TODO --> CANCELADO
+  TODO: t
+  INICIADO: i
+  FINALIZADO: f
+  ESPERANDO: e
+  note right of ESPERANDO: Registrar\nmotivo de la espera
+  DETENIDO:h
+  note right of CANCELADO: Registrar\npor qué fue cancelado
+  CANCELADO:c
+  ESPERANDO --> FINALIZADO
+#+end_src
+
+#+results:
+[[file:normal_task_states.png]]
+*** Estado de tareas de proyectos
+
+Yo uso una definición sencilla para los proyectos. No me gusta molestarme en
+definir "esto es un proyecto" y "esto no es un proyecto". Para mi la definición de 
+proyecto es realmente sencilla. Si una tarea tiene subtareas con palabras claves 
+TODO, entonces es un proyecto. Eso todo.
+
+Los proyectos se pueden definir en cualquier nivel - tan solo cree una tarea con 
+un estado TODO que tenga al menos una subtarea, que también tenga un estado TODO y
+ya tenés el proyecto. Los proyectos usan las mismas palabras claves que las tareas
+normales pero con una excepción - una de las subtareas del proyecto necesita ser
+marcada como =SIGUIENTE= o =EMPEZADA= de esta manera, el proyecto no queda en la
+lista de proyectos trabados.
+
+#+begin_src plantuml :file task_states.png
+  title Estados de tareas de proyectos
+  [*] -> TODO
+  TODO -> SIGUIENTE
+  SIGUIENTE -> INICIADO
+  SIGUIENTE -> FINALIZADO
+  INICIADO -> FINALIZADO
+  FINALIZADO -> [*]
+  TODO --> ESPERANDO
+  ESPERANDO --> TODO
+  DETENIDO --> CANCELADO
+  SIGUIENTE --> ESPERANDO
+  ESPERANDO --> SIGUIENTE
+  INICIADO --> ESPERANDO
+  ESPERANDO --> INICIADO
+  ESPERANDO --> CANCELADO
+  TODO --> FINALIZADO
+  CANCELADO --> [*]
+  TODO --> DETENIDO
+  DETENIDO --> TODO
+  TODO --> CANCELADO
+  TODO: t
+  SIGUIENTE: s
+  INICIADO: i
+  FINALIZADO: f
+  ESPERANDO: e
+  note right of ESPERANDO: Registrar\npor qué está en espera
+  DETENIDO: d
+  note right of CANCELADO: Registrar\npor qué fue cancelado
+  CANCELADO:c
+  ESPERANDO --> FINALIZADO
+#+end_src
+
+#+results:
+[[file:task_states.png]]
+*** Estado de tareas de ordenes de compras
+
+Los proyectos pagos tienen una =orden de compra= asociada que puedes ser usada para facturar al cliente.
+los siguientes estados registran ordenes de compra.
+
+#+begin_src plantuml :file po_states.png
+  title Estados de ordenes de compra
+  [*] -> ABIERTO
+  ABIERTO -> CERRADO
+  CERRADO -> [*]
+  ABIERTO: O
+  CERRADO: C
+#+end_src
+
+#+results:
+[[file:po_states.png]]
+*** Llamadas telefónicas (también puede ser usados para mails)
+
+Las llamdas telefonicas son especiales. Ellas son creadas en un estado TERMINADO por una tarea de captura.
+El momento de la llamada es grabado por todo el tiempo que la captura esté activa. Si necesito
+mirar otras cosas y quiero cerrar la captura ates de terminar la llamada hago =C-c C-c= y cierro
+de esta forma la tarea de captura (deteniedo el reloj) y luego =f9 SPC= retoma el reloj
+de la tarea de llamda mientras hago otras cosas.
+#*begin_src plantuml : file phone_states.png
+  title Estados de llamadas telefónicas
+  [*] -> LLAMADA
+  LLAMADA -> [*]
+#+end_src
+
+#+results:
+[[file:phone_states.png]]
 ** Selección rápida de TODO
 
-* Agregar nuevas tareas rápidamente con Org Capture
+La selección rápida de los todo permita cambiar desde cualquier estado de tarea TODO a 
+cualquier otro estado directamente seleccionado la tecla apropiada desde el menú de 
+selección rápida. ¡Esta es un muy buena característica!
 
-** Templates de captura
+#+begin_src emacs-lisp :tangle yes 
+  (setq org-use-fast-todo-selection t)
+#+end_src
+
+Cambiar el estado de una tarea se hace con
+: C-c C-t TECLA
+
+Donde =TECLA= es tecla de selección rápida definida en =org-todo-keywords=.
+
+La configuración
+#+begin_src emacs-lisp :tangle yes
+  (setq org-treat-S-cursor-todo-selection-as-state-change nil)
+#+end_src
+Permite cambiar los estados de TODO con S-left y S-right salteando todo
+el proceso normal de entrada o salida de un estado TODO. Esto atraviesa el ciclo
+de los estados TODO pero saltea la configuración de las marcas de tiempo e ingreso
+de notas, que es muy conveniente cuando solo lo que queres hacer es fijar
+el estatus de una entrada.
+** Disparadores de estados TODO
+:PROPERTIES:
+:CUSTOM_ID: ToDoStateTriggers
+:END:
+
+Tengo algunos disparadores que asignan etiquetas a las tareas automáticamente
+basados en los cambios de estados. Si una tarea se mueve a un estado =CANCELADO=
+entonces se agrega uan etiqueta =CANCELADO=. Mover una tarea de =CANCELADO= a =TODO=
+quita la etiqueta =CANCELADO=. Estas son usadas para filtrar tareas en la vista agenda
+de la cual hablaré más adelante
+
+Los disparadores se riguen por las siguientes reglas
+
+- Mover una tarea a =CANCELADO= agrega una etiqueta =CANCELADO=
+- Mover una tarea a =ESPERANDO= agrega una etiqueta =ESPERANDO=
+- Mover una tarea a =DETENIDO= agrega una etiqueta =ESPERANDO=
+- Mover una tarea a un estado terminado saca la etiqueta =ESPERANDO=
+- Mover una tarea a =TODO= saca las etiquetas =ESPERANDO= y =CANCELADO=
+- Mover una tarea a =SIGUIENTE= saca la etiqueta =ESPERANDO=
+- Mover una tarea a =Empezado= saca la etiqueta =ESPERANDO=
+- Mover una tarea a =TERMINADO= saca las etiquetas =ESPERANDO= y =CANCELADO=
+
+Las etiquetas son nusadas para filtrar las tareas en la vista de agenda.
+
+#+begin_src emacs-lisp :tangle yes 
+  (setq org-todo-state-tags-triggers
+        (quote (("CANCELADO" ("CANCELADO" . t))
+                ("ESPERANDO" ("ESPERANDO" . t))
+                ("DETENIDO" ("ESPERANDO" . t) ("DETENIDO" . t))
+                (done ("ESPERANDO") ("DETENIDO"))
+                ("TODO" ("ESPERANDO") ("CANCELADO") ("DETENIDO"))
+                ("SIGUIENTE" ("ESPERANDO") ("CANCELADO") ("DETENIDO"))
+                ("EMPEZADO" ("ESPERANDO") ("CANCELADO") ("DETENIDO"))
+                ("TERMINADO" ("ESPERANDO") ("CANCELADO") ("DETENIDO")))))
+#+end_src
+* Agregar nuevas tareas rápidamente con Org Capture
+:PROPERTIES:
+:CUSTOM_ID: Capture
+:END:
+
+El modo Org Captures remplaza el modo Remember para la captura de tareas y notas
+
+para agregar tareas de forma eficiente yo uso un mínimo de plantillas de
+capturas. Solía tener un monton de plantillas de capturas, una para cada 
+archivo org. Arrancaba el org-capture con C-M-r y luego elegía la plantilla
+que llenaba la tarea bajo =* tarea= en el archivo correspondiente. Esta
+configuración de C-M-r borra la configuración por defecto de la búsqueda reversa
+vía expresiones regulares de emacs pero raramente lo uso y puedo invocarlo desde =M-x=
+si realmente lo necesito. Me gusta más =C-M-r= que =C-c r= ya que se siente como 
+una simple llamda desde el teclado en lugar de usar dos teclas separadas y vengo usando
+esto desde hace tanto que mi dedos hacen lo correcto sin que tenga que realmente
+pensar en ello.
+
+Me encontré con que tengo que reenviar estas tareas capturadas de nuevo hacia 
+el lugar correcto en le archivo org, entonces todas esas diferentes plantillas
+de captura no me estaban ayudando en nada. Desde entonces cambié mi flujo de trabajo
+para usar un numero mínimo de plantillas de captura -- creo la nueva tarea
+rápidamente y la reenvío una sola vez. Esto también me salva de tener que mantener
+las plantillas de org-capture cada vez que agrego un nuevo archivo org.
+** Plantillas de captura
+:PROPERTIES:
+:CUSTOM_ID: CaptureTemplates
+:END:
+
+Cuando una nueva tarea necesita ser agregada, la categorizo en una de estas
+cosas:
+
+- Llamada telfónica (p)
+- Tarea nueva (t)
+- Nota (n)
+- Interrupción (j)
+- Nuevo hábito (h)
+
+y elijo la captura de tarea apropiada.
+
+Esta es mi configuración de org-capture
+
+#+begin_src emacs-lisp :tangle yes
+  (setq org-default-notes-file "~/git/org/refile.org")
+
+  ;; Uso C-M-r para empezar el modo captura
+  (global-set-key (kbd "C-M-r") 'org-capture)
+  ;; Uso C-c r para empezar l modo captura cuando uso SSH desde mi teléfono Android
+  (global-set-key (kbd "C-c r") 'org-capture)
+
+  ;; Plantillas de captura para : tareas TODO, Notas, Reuniones, Llamadas telefónicas, y org-protocol
+  (setq org-capture-templates
+        (quote (("t" "todo" entry (file "~/git/org/refile.org")
+                 "* TODO %?\n%U\n%a\n  %i" :clock-in t :clock-resume t)
+                ("n" "nota" entry (file "~/git/org/refile.org")
+                 "* %? :NOTA:\n%U\n%a\n  %i" :clock-in t :clock-resume t)
+                ("j" "DIARIO" entry (file+datetree "~/git/org/diary.org")
+                 "* %?\n%U\n  %i" :clock-in t :clock-resume t)
+                ("w" "org-protocol" entry (file "~/git/org/refile.org")
+                 "* TODO Review %c\n%U\n  %i" :immediate-finish t)
+                ("p" "Llamada telefónica" entry (file "~/git/org/refile.org")
+                 "* LLAMADA %? :LLAMADA:\n%U" :clock-in t :clock-resume t)
+                ("h" "Habito" entry (file "~/git/org/refile.org")
+                 "* SIGUIENTE %?\n%U\n%a\nSCHEDULED: %t .+1d/3d\n:PROPERTIES:\n:STYLE: habit\n:REPETIR_A_ESTADO: SIGUIENTE\n:FIN:\n  %i"))))
+
+
+#+end_src
 
 ** Archivos separados para las capturas de las tareas
 
