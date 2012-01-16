@@ -39,7 +39,7 @@ setadeadas en sus valores predeterminados. Se  muestra explícitamente el seteo 
 importantes variables utilizadas en org-mode esto en mantiene el comportamiento de mi
 de flujo de trabajo estable en caso de que cambie el valor por defecto
 en el futuro.
-* Primeros Pasos
+* FIXED Primeros Pasos
 
 Uso =org-mode= en la mayoría de mis buffers de emacs
 ** Configuración de Org-Mode
@@ -361,7 +361,7 @@ para que esa teclas funcionen en cualquier modo. Si estoy en el índice del buff
 entonces =C-u C-c C-x C-i= no funciona, pero la combinación  =C-F11= si y esta salva mi horario
 sin que tenga que ir al buffer org-mode primero sólo para registrarme en una tarea reciente.
 
-* Las Tareas y sus estados
+* FIXED Las Tareas y sus estados
 
 Uso un conjunto de palabras claves tipos TODO para todos mis documentos org. Org-mode permite
 definir claves TODO por archivo pero encuentro más fácil tener un set estándar y global de
@@ -571,7 +571,7 @@ Las etiquetas son nusadas para filtrar las tareas en la vista de agenda.
                 ("EMPEZADO" ("ESPERANDO") ("CANCELADO") ("DETENIDO"))
                 ("TERMINADO" ("ESPERANDO") ("CANCELADO") ("DETENIDO")))))
 #+end_src
-* Agregar nuevas tareas rápidamente con Org Capture
+* FIXED Agregar nuevas tareas rápidamente con Org Capture
 :PROPERTIES:
 :CUSTOM_ID: Capture
 :END:
@@ -643,7 +643,7 @@ Esta es mi configuración de org-capture
 
 ** La captura de tareas en sobre todo... ser rápido
 
-* Reclasificación de tareas
+* FIXME Reclasificación de tareas
 
 ** Configuración de la reclasificación
 
@@ -653,5 +653,17 @@ Esta es mi configuración de org-capture
 
 ** Reclasificando llamadas
 
-* Vistas de agenda personalizada
-
+* FIXME Vistas de agenda personalizada
+* FIXME Agendado de tiempo
+* FIXME Reporte y seguimiento de tiempo
+* FIXME Etiquetas
+* FIXME Manejo de notas
+* FIXME Manejo de llamadas telefónicas
+* FIXME Cosas de GTD
+* FIXME Archivar
+* FIXME Publicar y exportar
+* FIXME Recordatorios
+* FIXME Herramientas de productividad
+* FIXME Cosas que no uso
+* FIXME Usar GIT para mantener un historial, backpas y sincronizaciones
+* FIXME Cambios - Qué hay de nuevo!
